@@ -1,0 +1,57 @@
+/* Header CV dengan foto asli */
+.cv-top {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e5eaf1;
+}
+
+.foto {
+    width: 125px;
+    height: 145px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 12px;
+    border: 3px solid #e0bd6a;
+    flex-shrink: 0;
+}
+
+.identitas {
+    flex: 1;
+    min-width: 0;
+}
+
+.identitas h2 {
+    font-size: 29px;
+    color: #174a8b;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.kontak {
+    color: #64748b;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    .cv-top {
+        gap: 13px;
+        align-items: flex-start;
+    }
+
+    .foto {
+        width: 95px;
+        height: 120px;
+    }
+
+    .identitas h2 {
+        font-size: 21px;
+    }
+
+    .kontak {
+        font-size: 12px;
+    }
+}
